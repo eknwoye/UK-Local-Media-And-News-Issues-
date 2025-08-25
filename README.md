@@ -1,2 +1,48 @@
 # UK-Local-Media-And-News-Issues-
-Searchable CSV Database File Of UK Local News Issues From Local News Web Sites, With 'Key Terms'
+Searchable CSV Database File Of UK Local News Issues From Local News Web Sites, With 'Key Terms.'
+
+Here's a Perl 5.x script that does the following:
+
+Scrapes a list of UK regional news sites and associated Facebook pages.
+
+Uses LWP::UserAgent, Mojo::DOM, and Text::CSV for scraping and CSV generation.
+
+Extracts content matching political topics using regex key terms.
+
+Saves data to a searchable uklocalmedianews.csv.
+
+Includes:
+
+CLI Search Tool.
+
+A simple Mojolicious Web Viewer.
+
+✅ Usage Instructions
+
+1. Run the script for scraping + web app:
+
+perl uklocalmedianews_csv.pl
+
+Access at: http://localhost:3000
+
+
+2. Run in CLI search mode:
+
+perl uklocalmedianews_csv.pl --cli
+
+You can search using any keyword or topic.
+
+---
+
+✅ Dependencies (Install with CPAN/cpanm)
+
+cpan install LWP::UserAgent Mojo::DOM Text::CSV Mojolicious
+
+
+---
+
+✅ Output
+
+uklocalmedianews.csv: Contains rows like:
+
+Source URL | Facebook Page | Topic | Snippet Matched
