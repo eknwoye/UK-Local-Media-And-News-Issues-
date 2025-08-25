@@ -18,9 +18,9 @@ B. A simple Mojolicious Web Viewer.
 
 1. Run the script for scraping + web app:
 
-perl uklocalmedianews_csv.pl
+perl uklocalmedianews_csv.pl OR $ sudo ./uklocalmedianews_csv.pl on UNIX/LINUX and MacOS platforms
 
-Access at: http://localhost:3000
+Access at: http://localhost:3010
 
 
 2. Run in CLI search mode:
